@@ -4,6 +4,24 @@
   box-sizing: border-box;
   font-family: "Bai Jamjuree";
 }
+h1,h2,h3,h4,h5,h6{
+  color: hsl(210, 10%, 33%);
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.4rem;
+}
+p{
+  color: hsl(201, 11%, 66%);
+}
+section>p{
+  font-size: 16px !important;
+}
+
+/* Header */
+
 header {
   width: 100%;
   height: 200px;
@@ -14,29 +32,34 @@ header {
   align-items: center;
   /* background-color: #fff; */
 }
+
+/* History Section */
+
 section {
-  margin: 30px 0;
+  margin: 6rem 0;
 }
 .history {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  color: hsl(210, 10%, 33%);
 }
 .history h1 {
   font-size: 2rem;
 }
 .history p {
   text-align: center;
-  width: 60%;
-  font-size: 15px;
+  width: 100%;
+  padding: 0 32%;
+  /* font-size: 15px; */
   color: hsl(201, 11%, 66%);
 }
 .download {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 .download span {
   width: 160px;
@@ -45,14 +68,211 @@ section {
   color: white;
   font-size: 15px;
   border-radius: 20px;
+  cursor: pointer;
 }
+
 .ios {
   background-color: hsl(171, 66%, 44%);
   box-shadow: 0px 2px 0px 2px hsl(171, 72%, 39%),
-  0px 5px 11px 5px hsla(171, 66%, 44%, 0.263);
+    0px 5px 11px 5px hsla(171, 66%, 44%, 0.263);
 }
+.ios:hover,.ios:active{
+  background-color: hsl(171, 68%, 50%);
+  }
 .mac {
   background-color: hsl(233, 100%, 69%);
   box-shadow: 0px 2px 0px 2px hsl(233, 64%, 59%),
-  0px 5px 11px 5px hsl(233, 100%, 69%,0.263);
+    0px 5px 11px 5px hsl(233, 100%, 69%, 0.263);
+}
+
+.mac:hover,.mac:active{
+  background-color: hsl(233, 88%, 70%);
+}
+
+/* Keep Track Section */
+
+.track{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.track h2,h3{
+  color: hsl(210, 10%, 33%);
+}
+.track h2{
+  font-size: 2rem;
+}
+
+.track p{
+  color: hsl(201, 11%, 66%);
+  font-size: 14px;
+  line-height: 22px;
+  padding-right:26%;
+}
+.track>p{
+  width: 100%;
+  text-align: center;
+  padding: 0 29%;
+  
+}
+.list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+.list>div{
+  width: 50%;
+  overflow: hidden;
+}
+
+.list .left img{
+  width: 100%;
+  margin-left: -20px;
+}
+.list .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8%;
+  margin-top: -5%;
+}
+.list .right div{
+  padding-left: 40px;
+  padding-right: 42%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Access Anywhere Section */
+
+.anywhere{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+gap: 20px;
+}
+.anywhere>p{
+  padding: 0 30%;
+  font-size: 13px;
+  text-align: center;
+}
+.anywhere img{
+  margin-top: 50px;
+  width: 600px;
+}
+
+/* Supercharge section */
+
+.supercharge{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+.supercharge>p{
+  font-size: 14px;
+}
+.supercharge>div{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.supercharge>div div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.supercharge>div p{
+  font-size: 13px;
+  padding: 0 18%;
+  line-height: 22px;
+}
+
+/* Companies Section */
+
+.partners{
+  display: flex;
+  justify-content: space-around;
+}
+.partners img{
+  /* min-width: 100px; */
+  height: auto;
+  /* width: auto; */
+  width: 150px;
+  height: 40px;
+  /* aspect-ratio: 1/2; */
+  /* object-fit:12; */
+}
+
+/* Download Section */
+
+.download-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.download-section p{
+  padding: 0 30%;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer{
+  background-color: hsl(0, 0%, 92%);
+  padding: 30px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  /* gap: 20px; */
+  background-color: hsl(0, 0%, 92%);
+  width: 70%;
+}
+
+footer .left>span{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* height: 50px; */
+  padding: 10px;
+  width: 25%px;
+}
+footer .left a{
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+footer a:hover, footer a:active,footer a:hover path,footer a:active path{
+  color: hsl(171, 66%, 44%);
+  fill:hsl(171, 66%, 44%) ;
+}
+footer .left svg{
+  transform: scale(0.4);
+  margin-top: -2%;
+}
+footer .right{
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 25%;
+  justify-content: center;
+  margin-top: 3%;
 }
